@@ -1,1 +1,2 @@
-Shows difficulty colours of mobs
+MobDifficulty
+  Shows difficulty colours of mobs
