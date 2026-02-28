@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Version 1.00.004 
+Date: 2026-02-28 11:33
+Author: Erik Taurus
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Difficulty calculator</title>
+</head>
+<style>
+.calculator-box {
+  width: 250px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-row input {
+  width: 80px;
+}
+</style>
+<body>
+<h3>Mobs in Wrath of the Lich King</h3>
+<div class="calculator-box" id="calcBox">
+  <div class="form-row">
+    <label for="player" class="things">Player level:</label>
+    <input type="text" class="those" id="pl">
+  </div>
+  <div class="form-row">
+    <label for="mob" class="things">Mob level:</label>
+    <input type="text" class="those" id="ml">
+  </div>
+  <button onclick="calculate('pl','ml')">Calculate</button>
+  <script src="difficultyCalculator.js"></script>
+</div>
+</body>
+</html>
