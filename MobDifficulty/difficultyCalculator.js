@@ -1,6 +1,6 @@
 /**
- * Version 1.00.004 
- * Date: 2026-02-28 11:33
+ * Version 1.00.006 
+ * Last code edit: 2026-02-28 16:09
  * Author: Erik Taurus
  */
 const GREY = "#C0C0C0";
@@ -10,8 +10,8 @@ const RED = "#FF0000";
 const SKULL = "#000000";
 const DIFF_ERROR = "#FFB3B3";
 const calcBox = document.getElementById('calcBox');
-const objTf = document.getElementsByClassName('things');
-const objTx = document.getElementsByClassName('those'); 
+const objTf = document.getElementsByTagName('label')
+const objTx = document.getElementsByClassName('input'); 
 let IS_SKULL = false;
 function calculate(plrLvl,mobLvl){
 	let objPl = document.getElementById(plrLvl);

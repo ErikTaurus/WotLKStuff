@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+<!-- Todo: Fix numbers only for mobile, remove spinner from web browser if possible -->
 <!--
-Version 1.00.005
-Date: 2026-02-28 12:45
+Version 1.00.006
+Last code edit: 2026-03-01 16:13
 Author: Erik Taurus
 -->
 <html>
@@ -13,12 +14,10 @@ Author: Erik Taurus
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
-  background: #f5f5f5;
 }
 
 .wrapper {
@@ -73,13 +72,13 @@ body {
 
   <div class="calculator-box" id="calcBox">
     <div class="form-row">
-      <label for="player" class="things">Player level:</label>
-      <input type="text" class="those" id="pl">
+      <label for="player">Player level:</label>
+      <input type="text" id="pl">
     </div>
 
     <div class="form-row">
-      <label for="mob" class="things">Mob level:</label>
-      <input type="text" class="those" id="ml">
+      <label for="mob">Mob level:</label>
+      <input type="text" id="ml">
     </div>
 
     <button onclick="calculate('pl','ml')">Calculate</button>
